@@ -13,10 +13,11 @@ document.querySelector("button").addEventListener("click", getResource);
 
 const { createClient } = microcms;
 
+const apiKey = Deno.env.get("API_KEY");
 // Initialize Client SDK.
 const client = createClient({
   serviceDomain: "p5aur2gmg1", // YOUR_DOMAIN is the XXXX part of XXXX.microcms.io
-  apiKey: Deno.env.get("API_KEY"),
+  apiKey: apiKey,
   // retry: true // Retry attempts up to a maximum of two times.
 });
 
