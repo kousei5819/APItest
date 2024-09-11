@@ -16,7 +16,7 @@ const { createClient } = microcms;
 // Initialize Client SDK.
 const client = createClient({
   serviceDomain: "p5aur2gmg1", // YOUR_DOMAIN is the XXXX part of XXXX.microcms.io
-  apiKey: Deno.env.get("API_KEY"),
+  apiKey: obj,
   // retry: true // Retry attempts up to a maximum of two times.
 });
 
