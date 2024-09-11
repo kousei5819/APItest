@@ -37,4 +37,4 @@ async function getResource() {
 }
 
 // button要素のclickイベントに登録
-document.querySelector("button").addEventListener("click", getResource);
+document.addEventListener("DOMContentLoaded", getResource);
